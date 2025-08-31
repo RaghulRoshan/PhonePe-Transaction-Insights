@@ -1,4 +1,4 @@
-  #📊 PhonePe Case Studies Dashboard 🚀
+📊 PhonePe Case Studies Dashboard 🚀
 🌟 Overview
 An interactive Streamlit dashboard to analyze PhonePe's transaction, user, and insurance data across Indian states. Features a 3D India map 🗺️ on the home page showing transaction amounts and six case studies with dynamic visualizations 📈.
 📸 Screenshot of the dashboard home page showing the 3D India map with transaction amounts by state.
@@ -70,13 +70,16 @@ Download data as CSV 💾.
 📸 Screenshot of the sidebar with case study selection and filters.
 🐞 Troubleshooting
 
-🔗 Database Issues: Verify credentials and ca.pem path. Test:SELECT 1;
+🔗 Database Issues: Verify credentials and ca.pem path. Test:
+SELECT 1;
 
 
-🗺️ 3D Map Issues: Check GeoJSON or data:SELECT State, SUM(Transaction_amount) FROM Aggre_transaction GROUP BY State;
+🗺️ 3D Map Issues: Check GeoJSON or data:
+SELECT State, SUM(Transaction_amount) FROM Aggre_transaction GROUP BY State;
 
 
-🛠️ Column Mismatches: Verify schema:SHOW COLUMNS FROM Aggre_transaction;
+🛠️ Column Mismatches: Verify schema:
+SHOW COLUMNS FROM Aggre_transaction;
 SHOW COLUMNS FROM Map_user;
 
 
